@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>돔(DOM) 조작하기</title>
+    <script>
+        const aaa = () => {
+            const token = String(Math.floor(Math.random()*1000000)).padStart(6, "0")
+
+            document.getElementById("qqq").innerText = token
+        } 
+
+    </script>
+</head>
+<body>
+    <span id="qqq">000000</span>
+    <button onclick="aaa()">인증번호 전송</button>
+    
+
+</body>
+</html>
